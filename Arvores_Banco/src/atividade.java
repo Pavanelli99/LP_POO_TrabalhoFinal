@@ -12,7 +12,7 @@ public class atividade {
         testTree.inserir(15, testTree.root);          
         testTree.inserir(17, testTree.root);
       
-        testTree.remover(testTree.root, null, 16 );
+       //testTree.remover(testTree.root, null, 16 );
   
         //if (!testTree.procurar(testTree.root, 22, false))
         //  System.out.println("Elemento não encontrado! \n");

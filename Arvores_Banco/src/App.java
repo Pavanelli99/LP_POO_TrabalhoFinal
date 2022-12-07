@@ -4,18 +4,20 @@ public class App {
    
     public static void main(String[] args){
 
-      UserRepository userRepository = new UserRepository();
+      TreeRepository userRepository = new TreeRepository();
 
       //  ConnectionFactory.createConnection();
         
 
-        User usr= new User();
+      //  User usr= new User();
 
-        usr.setId(3);
-        usr.setUsername("paulinho");
-        usr.setPassword("1234");
-        usr.setStatus( 0);
-        usr.setToken(7.333);
+      Tree testTree = new Tree();
+        
+      testTree.inserir(10, testTree.root);
+      testTree.inserir(11, testTree.root);
+      testTree.inserir(16, testTree.root);
+      testTree.inserir(15, testTree.root);          
+      testTree.inserir(17, testTree.root);
 
         
        //Salvar um usuario
@@ -51,9 +53,9 @@ public class App {
         // Atualizar User
         //userRepository.update(users);
 
-        List <User> activeUsers = userRepository.selectAllActive();
-        for(User u : activeUsers)
-        System.out.println(u);
+        // List <User> activeUsers = userRepository.selectAllActive();
+        // for(User u : activeUsers)
+        // System.out.println(u);
 
 
 
